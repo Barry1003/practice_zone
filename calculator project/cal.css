@@ -1,39 +1,46 @@
 .main-container{
     background-color: black;
-    justify-content: center;
-    align-items: center;
     margin-top: 20px;
-    max-width: 700px;
+    max-width: 650px;
     display: block;
     border-radius: 20%;
     text-align: center;
-    height: 90vh;
-    position: 
-
+    height: 80vh;
+    position: relative;
 }
  .main-container .maincontent .buttons .padd-15{
      display: flex;
+     max-width: 600px;
      
 }
-/* .main-container .maincontent .top-box{
-    display: block;
-    padding-bottom: 100px;
-    background-color: rgb(250, 246, 246);
-    /* border-radius: 40%; */
+.main-container .maincontent .top-box{
+    display: flex;
+    margin-top: 49px;
+    background-color: rgba(250, 246, 246, 0.308);
+    height: 25vh;
+    width: 363px;
+    border-radius: 2%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    top: 77px;
+}
 
 .main-container .maincontent .buttons{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-top: 150px;padding-left: 35px;
+    padding-top: 86px;padding-left: 38px;
 }  
 
 .main-container .maincontent .buttons .btn{
     display: flex;
     border-radius: 50%;
-    max-width: 90px;
-    height: 80px;
+    max-width: 100px;
+    height: 60px;
     justify-content: center;
-    padding-top: 40px;
+    padding-top: 30px;
     font-weight: bolder;
     margin-right: 50px;
     text-align: center;
@@ -46,12 +53,23 @@
 }
 
 .main-container .maincontent .buttons .lft-btn{
-    background-color: yellow;
+    background-color: rgb(231, 134, 7);
 }
 
 .main-container .maincontent .buttons .nrm-btn{
-    background-color: rgba(240, 255, 255, 0.596);
+    background-color: rgba(240, 255, 255, 0.315);
 }
 
-
-
+@media only screen and ( max-height: 824px) and (max-width: 1440px){
+    .main-container{
+        
+        left: 341px;
+        bottom: 14px;
+        height: 666px;
+        max-width: 570px;
+    } 
+    
+    .main-container .maincontent .top-box{
+        width: 579px;
+    }
+}
